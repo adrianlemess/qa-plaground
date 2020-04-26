@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "e2e": "qawolf test",
+    "e2e:firefox": "qawolf test --firefox",
+    "e2e:safari": "npx qawolf test --webkit",
+    "e2e:all": "qawolf test --all-browsers",
+    "e2e:local": "npm run start & npx wait-on http://localhost:4200"
   },
   "author": "",
   "license": "ISC",
